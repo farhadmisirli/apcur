@@ -1,0 +1,56 @@
+<ValCurs Date="29.03.2021" Name="AZN məzənnələri" Description="Azərbaycan Respublikası Mərkəzi Bankının 29.03.2021 tarixdən etibarən xarici valyutaların və bank metallarının Azərbaycan manatına qarşı rəsmi məzənnələri bülleteni">
+    <ValType Type="Bank metalları">
+        <Valute Code="XPD">
+            <Nominal>1 t.u.</Nominal>
+            <Name>Palladium</Name>
+            <Value>4538.0055</Value>
+        </Valute>
+        <Valute Code="XPT">
+            <Nominal>1 t.u.</Nominal>
+            <Name>Platin</Name>
+            <Value>2011.7035</Value>
+        </Valute>
+        <Valute Code="XAG">
+            <Nominal>1 t.u.</Nominal>
+            <Name>Gümüş</Name>
+            <Value>42.3082</Value>
+        </Valute>
+        <Valute Code="XAU">
+            <Nominal>1 t.u.</Nominal>
+            <Name>Qızıl</Name>
+            <Value>2940.0565</Value>
+        </Valute>
+    </ValType>
+    <ValType Type="Xarici valyutalar">
+        <Valute Code="USD">
+            <Nominal>1</Nominal>
+            <Name>1 US Dollar</Name>
+            <Value>1.7</Value>
+        </Valute>
+        <Valute Code="EUR">
+            <Nominal>1</Nominal>
+            <Name>1 Euro</Name>
+            <Value>2.0032</Value>
+        </Valute>
+        <Valute Code="AUD">
+            <Nominal>1</Nominal>
+            <Name>1 Australian Dollar</Name>
+            <Value>1.2973</Value>
+        </Valute>
+        <Valute Code="ARS">
+            <Nominal>1</Nominal>
+            <Name>1 Argentine Peso</Name>
+            <Value>0.0185</Value>
+        </Valute>
+        <Valute Code="BYN">
+            <Nominal>1</Nominal>
+            <Name>1 Belarus Ruble</Name>
+            <Value>0.6472</Value>
+        </Valute>
+        <Valute Code="BRL">
+            <Nominal>1</Nominal>
+            <Name>1 Brazilian Real</Name>
+            <Value>0.2953</Value>
+        </Valute>
+    </ValType>
+</ValCurs>

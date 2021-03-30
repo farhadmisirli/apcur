@@ -4,10 +4,10 @@ class Currency(db.Model):
     __tablename__ = "currencies"
     id = db.Column(db.Integer, primary_key=True)
     code = db.Column(db.String(8))
-    flag = db.Column(db.String(32))
-    status = db.Column(db.BOOLEAN)
+    value = db.Column(db.Float)
+    date = db.Column(db.Date)
 
-    def __init__(self, code, flag, status):
+    def __init__(self, code, value, date):
         self.code = code
-        self.flag = flag
-        self.status = status
+        self.value = value
+        self.date = date

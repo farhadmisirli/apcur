@@ -1,4 +1,5 @@
 from app import app
+import requests
 
 from app import routes
 
