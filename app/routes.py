@@ -1,26 +1,13 @@
 from app import app
+from flask import jsonify
 from app.models import Currency
-from flask_marshmallow import Marshmallow
-
-ma = Marshmallow(app)
-
-
-class NoteSchema(ma.SQLAlchemyAutoSchema):
-    class Meta:
-        model = Currency
+from app.schemas import CurrencySchema
 
 @app.route("/", methods=["GET"])
 def home():
 	return "Hello World"
 
-
 @app.route("/currencies", methods=["GET"])
 def index():
-
 	currencies = Currency.query.all()
-
-	return NoteSchema(many=True).dump(currencies)
-
-
-
-
+	return jsonify(CurrencySchema(many=True).dump(currencies))
