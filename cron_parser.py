@@ -15,6 +15,6 @@ for x in mytree[1]:
     value = x.find('Value').text
     name = x.find('Name').text
 
-    curr = Currency(code, value, date)
+    curr = Currency(name, code, value, date)
     db.session.add(curr)
     db.session.commit()

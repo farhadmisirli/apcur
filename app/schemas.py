@@ -3,4 +3,5 @@ from app.models import Currency
 
 class CurrencySchema(ma.SQLAlchemyAutoSchema):
     class Meta:
-        model = Currency
+        # model = Currency
+        fields = ('id', 'name', 'code', 'value', 'flag')
