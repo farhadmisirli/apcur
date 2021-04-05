@@ -1,4 +1,5 @@
 from app import db
+from app.config import common_conf as cnf
 
 class Currency(db.Model):
     __tablename__ = "currencies"
@@ -8,11 +9,14 @@ class Currency(db.Model):
     code = db.Column(db.String(8))
     value = db.Column(db.Float)
     date = db.Column(db.Date)
-    flag = None
 
     @property
-    def flag(self):
-        return "/images/flags-png/" + self.code.lower() + ".png"
+    def flag_png(self):
+        return cnf["base_url"]+"/images/flags-png/" + self.code.lower() + ".png"
+
+    @property
+    def flag_svg(self):
+        return cnf["base_url"] + "/images/flags-svg/" + self.code.lower() + ".svg"
 
     def __init__(self, name, code, value, date):
         self.name = name
