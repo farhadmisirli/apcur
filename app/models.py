@@ -8,15 +8,14 @@ class Currency(db.Model):
     code = db.Column(db.String(8))
     value = db.Column(db.Float)
     date = db.Column(db.Date)
-    flag = "sdsds"
+    flag = None
 
     @property
     def flag(self):
-        return ( "/images/flags-svg/" + (self.code).lower() + ".svg" )
+        return "/images/flags-png/" + self.code.lower() + ".png"
 
     def __init__(self, name, code, value, date):
         self.name = name
         self.code = code
         self.value = value
         self.date = date
-
