@@ -1,0 +1,9 @@
+.idea
+venv/
+__pycache__/
+app/__pycache__/
+
+apcur.ini
+apcurenv/
+error.log
+wsgi.py
